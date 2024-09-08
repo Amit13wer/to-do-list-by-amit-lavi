@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Task Management App</h1>
+        
+        <!-- Task Input Form -->
+        <div class="task-input">
+            <input type="text" id="task-input" placeholder="Enter your task here">
+            <select id="priority-select">
+                <option value="low">Low Priority</option>
+                <option value="medium">Medium Priority</option>
+                <option value="high">High Priority</option>
+            </select>
+            <select id="category-select">
+                <option value="work">Work</option>
+                <option value="personal">Personal</option>
+                <option value="study">Study</option>
+            </select>
+            <input type="date" id="due-date-input">
+            <button id="add-task-btn">Add Task</button>
+        </div>
+        
+        <!-- Task Filters -->
+        <div class="task-filters">
+            <label for="filter-category">Filter by Category:</label>
+            <select id="filter-category">
+                <option value="all">All</option>
+                <option value="work">Work</option>
+                <option value="personal">Personal</option>
+                <option value="study">Study</option>
+            </select>
+            
+            <label for="filter-status">Filter by Status:</label>
+            <select id="filter-status">
+                <option value="all">All</option>
+                <option value="completed">Completed</option>
+                <option value="incomplete">Incomplete</option>
+            </select>
+
+            <label for="filter-due-date">Filter by Due Date:</label>
+            <select id="filter-due-date">
+                <option value="all">All</option>
+                <option value="today">Today</option>
+                <option value="this-week">This Week</option>
+                <option value="this-month">This Month</option>
+            </select>
+        </div>
+        
+        <!-- Task List -->
+        <ul id="todo-list"></ul>
+        
+        <!-- Clear All Tasks Button -->
+        <button id="clear-tasks-btn">Clear All Tasks</button>
+        
+        <!-- Edit Task Modal -->
+        <div id="edit-task-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Edit Task</h2>
+                <input type="text" id="edit-task-text" placeholder="Enter new task text">
+                <input type="date" id="edit-task-due-date">
+                <select id="edit-task-priority">
+                    <option value="low">Low Priority</option>
+                    <option value="medium">Medium Priority</option>
+                    <option value="high">High Priority</option>
+                </select>
+                <select id="edit-task-category">
+                    <option value="work">Work</option>
+                    <option value="personal">Personal</option>
+                    <option value="study">Study</option>
+                </select>
+                <button id="save-edit-task-btn">Save Changes</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+

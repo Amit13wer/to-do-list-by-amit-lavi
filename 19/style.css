@@ -1,0 +1,174 @@
+/* Basic styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* Task input form styles */
+.task-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.task-input input,
+.task-input select {
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+#add-task-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#add-task-btn:hover {
+    background-color: #218838;
+}
+
+/* Task filters styles */
+.task-filters {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.task-filters label {
+    margin-right: 10px;
+}
+
+.task-filters select {
+    margin: 5px;
+    padding: 10px;
+}
+
+/* Task list styles */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #fff;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Task priority and category styles */
+li.low {
+    border-left: 5px solid green;
+}
+
+li.medium {
+    border-left: 5px solid orange;
+}
+
+li.high {
+    border-left: 5px solid red;
+}
+
+li.work {
+    background-color: #e0f7fa;
+}
+
+li.personal {
+    background-color: #fce4ec;
+}
+
+li.study {
+    background-color: #e8f5e9;
+}
+
+li.completed {
+    text-decoration: line-through;
+    background-color: #d0ffd0; /* Light green */
+}
+
+li.overdue {
+    border-left: 5px solid red;
+    background-color: #ffe0e0; /* Light red */
+}
+
+/* Clear all tasks button styles */
+#clear-tasks-btn {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+}
+
+#clear-tasks-btn:hover {
+    background-color: #c82333;
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 500px;
+    position: relative;
+}
+
+.modal .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.modal input,
+.modal select {
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+#save-edit-task-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#save-edit-task-btn:hover {
+    background-color: #218838;
+}
+
